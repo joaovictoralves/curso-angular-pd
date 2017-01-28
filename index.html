@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Prodata</title>
+
+    <!--imports das libs-->
+    <script src="node_modules/angular/angular.js"></script>
+
+    <!--imports do projeto-->
+    <script src="app/config/pd-app.module.js"></script>
+    <script src="app/controller/index.controller.js"></script>
+
+</head>
+
+<body ng-app="pdCurso">
+
+<div ng-controller="IndexController">
+    <span ng-bind="nome"></span>
+    <input type="text" ng-model="nome">
+
+    <button ng-click="onClickBotao()"> Botão</button>
+</div>
+
+
+</body>
+</html>
